@@ -14,6 +14,9 @@
 
     <!-- custom-css -->
     <style>
+      .redish-bg{
+        background-color: #FCEAE8;
+      }
       /* font */
       .font-700{
         font-family: poppins, sans-serif;
@@ -47,7 +50,7 @@
 
     <header class="container">
       <!-- navigation-bar-start -->
-    <nav class="navbar navbar-expand-lg bg-light py-3">
+    <nav class="navbar navbar-expand-lg bg-none py-3">
       <div class="container">
         <!-------------- logo ----------------->
         <a class="navbar-brand" href="#">
@@ -80,17 +83,18 @@
 
     <!-- ---------Banner-section-start---------- -->
 
-      <section class="">
+      <section class="my-4">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row bg-primary">
-                <div class="col-7 d-flex flex-column justify-content-center align-items-center">
+            <!-- -------carousel-items-------- -->
+            <div class="carousel-item active redish-bg rounded p-5">
+              <div class="row ">
+                <div class="col-7 d-flex flex-column justify-content-center align-items-center ">
                   <div >
-                    <h2>Cool Dude Headphone</h2>
-                    <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
-                    <h1>$420</h1>
-                    <div class="btn btn-primary">Buy Now</div>
+                    <h2 class="font-600">Cool Dude Headphone</h2>
+                    <p class="font-400">This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
+                    <h1 class="font-600">$420</h1>
+                    <div class="btn btn-primary font-500 text-white">Buy Now</div>
                   </div>
                 </div>
                 <div class="col-5">
@@ -98,12 +102,39 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+            <!-- -------carousel-items-------- -->
+            <div class="carousel-item active redish-bg rounded p-5">
+              <div class="row ">
+                <div class="col-7 d-flex flex-column justify-content-center align-items-center ">
+                  <div >
+                    <h2 class="font-600">Mega LCD TV For Sports</h2>
+                    <p class="font-400">This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
+                    <h1 class="font-600">$1200</h1>
+                    <div class="btn btn-primary font-500 text-white">Buy Now</div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+            <!-- -------carousel-items-------- -->
+            <div class="carousel-item active redish-bg rounded p-5">
+              <div class="row ">
+                <div class="col-7 d-flex flex-column justify-content-center align-items-center ">
+                  <div >
+                    <h2 class="font-600">X-Box for your living room</h2>
+                    <p class="font-400">This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
+                    <h1 class="font-600">$600</h1>
+                    <div class="btn btn-primary font-500 text-white">Buy Now</div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
             </div>
+            
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
