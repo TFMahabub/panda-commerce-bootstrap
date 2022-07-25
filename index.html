@@ -3,9 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&    display=swap" rel="stylesheet">
+    <!-- title -->
     <title>Panda-commerce</title>
     <!-- Bootstrap-css-link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- custom-css -->
+    <style>
+      /* font */
+      .font-700{
+        font-family: poppins, sans-serif;
+        font-weight: 700;
+      }
+      .font-600{
+        font-family: poppins, sans-serif;
+        font-weight: 600;
+      }
+      .font-500{
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+      }
+      .font-400{
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+      }
+
+
+
+
+    </style>
+
+
   </head>
   <body>
 
@@ -13,30 +45,32 @@
                           Header
     ==================================================== -->
 
-    <!-- navigation-bar-start -->
+    <header class="container">
+      <!-- navigation-bar-start -->
     <nav class="navbar navbar-expand-lg bg-light py-3">
       <div class="container">
-        <!-- logo -->
+        <!-------------- logo ----------------->
         <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="logo">
+          <img src="images/logo.png" alt="logo" width="130">
         </a>
-        <!-- ---------menu------------- -->
+        <!-- ---------toggle-bar------------- -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- ---------menu------------- -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active font-500" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shoes</a>
+              <a class="nav-link font-500" href="#">Shoes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Backpack</a>
+              <a class="nav-link font-500" href="#">Backpack</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Subscribe</a>
+              <a class="nav-link font-500" href="#">Subscribe</a>
             </li>
           </ul>
         </div>
@@ -44,6 +78,45 @@
     </nav>
     <!-- navigation-bar-end -->
 
+    <!-- ---------Banner-section-start---------- -->
+
+      <section class="">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row bg-primary">
+                <div class="col-7 d-flex flex-column justify-content-center align-items-center">
+                  <div >
+                    <h2>Cool Dude Headphone</h2>
+                    <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
+                    <h1>$420</h1>
+                    <div class="btn btn-primary">Buy Now</div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </header>
+    <!-- ---------Banner-section-end---------- -->
     
 
 
